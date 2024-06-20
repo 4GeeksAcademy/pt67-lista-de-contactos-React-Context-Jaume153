@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, } from 'react'
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
@@ -39,7 +39,7 @@ export const AddContact = () => {
 			<div className="mb-3">
 				<button className="btn btn-success w-100" type="submit">Guardar</button>
 			</div>
-			<Link to="/">Volver a la lista de contactos</Link>
+			<Link to="/"><button type="button" class="btn btn-warning">Volver a la lista de contactos</button></Link>
 		</form>
 	);
 };

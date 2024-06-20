@@ -24,11 +24,7 @@ export const Contact = () => {
 	}
 
 
-	//const urlImage1 = "https://picsum.photos/id/"
-	//const urlImage2 = "/200/200"
-
-
-	return (
+		return (
 
 		<div>
 			{store.Contacts.length === 0 && <span className="m-5 p-5 text-danger">No existe ningún contacto</span>}

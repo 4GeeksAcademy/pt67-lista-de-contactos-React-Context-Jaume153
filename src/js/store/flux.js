@@ -1,5 +1,3 @@
-
-
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -44,11 +42,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					);
 					if (!response.ok) {
 				actions.createContactList();
+					} else {
+						createContactList();
 					}
 					const data = await response.json();
 					setStore({
 						Contacts: data.contacts,
 					})
+					
 				
 			},
 
