@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useEffect, useContext} from "react";
 import { Link } from "react-router-dom";
 import { Contact } from "../component/contactCard.jsx";
 
-export const ContactList = () => {
+import { Context } from "../store/appContext.js";
 
+export const ContactList = () => {
+const{actions}= useContext(Context)
+	useEffect(()=>{
+		actions.getContacts()
+	},[])
 
 	return (
 		<div className="container">
@@ -17,3 +22,4 @@ export const ContactList = () => {
         </div>
 	);
 };
+ 
