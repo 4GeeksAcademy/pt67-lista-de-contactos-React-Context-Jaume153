@@ -40,11 +40,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					const response = await fetch(
 						"https://playground.4geeks.com/contact/agendas/jaume153"
 					);
-				//  	if (!response.ok) {
-				//  actions.createContactList()
-				// 	} else {
-				// 		createContactList();
-				// 	}
+				 	if (!response.ok) {
+				 actions.createContactList()
+					} 
 					const data = await response.json();
 					setStore({
 						Contacts: data.contacts,

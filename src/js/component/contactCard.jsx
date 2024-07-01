@@ -27,8 +27,8 @@ export const Contact = () => {
 		return (
 
 		<div>
-			{/* {store.Contacts.length === 0 && <span className="m-5 p-5 text-danger">No existe ningún contacto</span>} */}
-			{store.Contacts.map((contact) => {
+			{store.Contacts.length === 0 && <span className="m-5 p-5 text-danger">No existe ningún contacto</span>}
+			{store.Contacts?.map((contact) => {
 				return (
 					<div key={contact.id} className="row border rounded m-2">
 						<div className="col-3 col-lg-2 p-2 mx-4 my-auto">
